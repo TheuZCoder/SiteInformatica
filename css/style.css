@@ -13,3 +13,16 @@ height: 500px;
     justify-content: flex-end;
 }
 
+.dark {
+    background-color: #222;
+    color: #fff;
+  }
+.dark li {
+    color: #fff;
+}
+  
+  /* Estilos para o tema light (opcional) */
+  .light {
+    background-color: #fff;
+    color: #222;
+  }
