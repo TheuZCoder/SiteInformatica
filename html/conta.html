@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/conta.css">
 
     <title>Minha Conta</title>
 </head>
+
 <body>
 
     <!--CABEÇALHO-->
@@ -50,25 +53,76 @@
         </div>
         <div id="loginModal">
             <div id="loginContent">
-              <span id="closeBtn">&times;</span>
-              <h2>Login</h2>
-              <form id="loginForm">
-                <input type="text" id="username" placeholder="Nome de usuário">
-                <input type="password" id="password" placeholder="Senha">
-                <input type="submit" value="Login">
-              </form>
+                <span id="closeBtn">&times;</span>
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <input type="text" id="username" placeholder="Nome de usuário">
+                    <input type="password" id="password" placeholder="Senha">
+                    <input type="submit" value="Login">
+                </form>
             </div>
-          </div>
+        </div>
     </header>
     <!--CABEÇALHO-->
     <!--CORPO-->
     <main>
+        <br><br>
+        <section>
+            <img class="perfilimg" src="../IMG/download.png" alt="">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-7 col-lg-8">
+                    <h4 class="mb-3">Dados do Perfil</h4>
+                    <form class="needs-validation" novalidate="">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label for="firstName" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value=""
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Coloque seu nome.
+                                </div>
+                            </div>
 
+                            <div class="col-sm-6">
+                                <label for="lastName" class="form-label">Sobrenome</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value=""
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Coloque o ultimo nome.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="username" class="form-label">Username</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" class="form-control" id="username" placeholder="Username"
+                                        required="">
+                                    <div class="invalid-feedback">
+                                        Seu username é necessario.
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="email" class="form-label">Email <span
+                                                class="text-body-secondary"></span></label>
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="seuemail@example.com">
+                                        <div class="invalid-feedback">
+                                            Por favor coloque um email valido para novas promoções
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <br><br><br><br><br><br><br>
     </main>
     <!--CORPO-->
     <!--FOOTER-->
-      <!--ICONES DARK MODE-->
-      <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <!--ICONES DARK MODE-->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="check2" viewBox="0 0 16 16">
             <path
                 d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z">
@@ -113,8 +167,8 @@
     <!--ICONES FACEBOOK,TWITTER,INSTA-->
     <!--DARK MODE SELECTOR-->
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme"
-            type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (light)">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+            aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (light)">
             <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
                 <use href="#sun-fill"></use>
             </svg>
@@ -122,8 +176,8 @@
         </button>
         <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
             <li>
-                <button type="button" class="dropdown-item d-flex align-items-center active"
-                    data-bs-theme-value="light" aria-pressed="true">
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light"
+                    aria-pressed="true">
                     <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
                         <use href="#sun-fill"></use>
                     </svg>
@@ -148,34 +202,35 @@
         </ul>
     </div>
     <!--DARK MODE SELECTOR-->
-</main>
-<div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                <svg class="bi" width="30" height="24">
-                    <use xlink:href="#bootstrap"></use>
-                </svg>
-            </a>
-            <span class="mb-3 mb-md-0 text-body-secondary">© 2023 ComputeG, Inc</span>
-        </div>
+    </main>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2023 ComputeG, Inc</span>
+            </div>
 
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-                        <use xlink:href="#twitter"></use>
-                    </svg></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-                        <use xlink:href="#instagram"></use>
-                    </svg></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-                        <use xlink:href="#facebook"></use>
-                    </svg></a></li>
-        </ul>
-    </footer>
-</div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#twitter"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#instagram"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#facebook"></use>
+                        </svg></a></li>
+            </ul>
+        </footer>
+    </div>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-<script src="../js/config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" <script
+    src="../js/config.js"></script>
 <script src="../js/TrocarCores.js"></script>
+
 </html>
