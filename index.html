@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title></title>
@@ -98,6 +99,50 @@
         <br>
 
         <!--CARROSEL-->
+        <!--MODALS-->
+        <div class="modal fade" id="modalProduto" tabindex="-1" role="dialog" aria-labelledby="modalProdutoLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProdutoLabel">Detalhes do Produto</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="IMG/fone.jpg" class="img-fluid" alt="Imagem do produto">
+                            </div>
+                            <div class="col-md-6">
+                                <h5>HEADSET GAMER MANCER QUARTZ, DRIVERS 50MM, PRETO, MCR-QTZ-BL01</h5>
+                                <div class="preço">
+                                    <div class="preço">
+                                        <span class="jss344 ">à vista</span>
+                                        <div class="vista">R$ 319,90</div>
+                                        <span class="jss346 ">no PIX com 15% de desconto</span>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>Este é um headset gamer de alta qualidade, equipado com drivers de 50mm para
+                                    proporcionar uma experiência de áudio imersiva. Possui design ergonômico para máximo
+                                    conforto durante longas sessões de jogo. O headset é compatível com PC, consoles e
+                                    dispositivos móveis, permitindo que você mergulhe no mundo dos jogos com excelente
+                                    qualidade de som.</p>
+                                <p>Aproveite essa oferta e garanta já o seu headset gamer Mancer Quartz por um preço
+                                    incrível!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--MODALS-->
         <!--CARDS A PARTIR DAQUI-->
         <section>
             <div class="container mb-4">
@@ -111,9 +156,9 @@
                                     13872-1</strong></span><br>
                             <div class="preço">
                                 <div class="preço">
-                                    <div class="vista">de <s>R$&nbsp;470,47</s> por:</div><span class="jss344 jss370">à
+                                    <div class="vista">de <s>R$&nbsp;470,47</s> por:</div><span class="jss344 ">à
                                         vista</span>
-                                    <div class="vista">R$&nbsp;319,90</div><span class="jss346 jss370">no PIX com 15%
+                                    <div class="vista">R$&nbsp;319,90</div><span class="jss346 ">no PIX com 15%
                                         desconto</span>
                                 </div>
                             </div>
@@ -130,16 +175,18 @@
                             <span><strong>HEADSET GAMER MANCER QUARTZ, DRIVERS 50MM, PRETO, MCR-QTZ-BL01</strong></span>
                             <div class="preço">
                                 <div class="preço">
-                                    <span class="jss344 jss370">à
+                                    <span class="jss344 ">à
                                         vista</span>
-                                    <div class="vista">R$&nbsp;319,90</div><span class="jss346 jss370">no PIX com 15%
+                                    <div class="vista">R$&nbsp;319,90</div><span class="jss346 ">no PIX com 15%
                                         desconto</span>
                                 </div>
                             </div>
                             <br>
                             <br>
 
-                            <a href="#" class="btn btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-primary" data-toggle="modal"
+                                data-target="#modalProduto">Comprar</a>
+
                         </div>
                     </div>
 
@@ -153,9 +200,9 @@
                             <div class="preço">
                                 <div class="preço">
                                     <div class="vista">de <s>R$&nbsp;2.000,47</s> por:</div><span
-                                        class="jss344 jss370">à
+                                        class="jss344 ">à
                                         vista</span>
-                                    <div class="vista">R$&nbsp;1.470,90</div><span class="jss346 jss370">no PIX com 15%
+                                    <div class="vista">R$&nbsp;1.470,90</div><span class="jss346 ">no PIX com 15%
                                         desconto</span>
                                 </div>
                             </div>
@@ -170,9 +217,9 @@
                                     PCH-VVT8RGB-3200</strong></span>
                             <div class="preço">
                                 <div class="preço">
-                                    <div class="vista">de <s>R$&nbsp;352,47</s> por:</div><span class="jss344 jss370">à
+                                    <div class="vista">de <s>R$&nbsp;352,47</s> por:</div><span class="jss344 ">à
                                         vista</span>
-                                    <div class="vista">R$&nbsp;250,90</div><span class="jss346 jss370">no PIX com 15%
+                                    <div class="vista">R$&nbsp;250,90</div><span class="jss346 ">no PIX com 15%
                                         desconto</span>
                                 </div>
                             </div>
@@ -193,9 +240,9 @@
                             <span><strong>CADEIRA GAMER RAZER ENKI, PRETA, RZ38-03720300-R3U1</strong></span>
                             <div class="preço">
                                 <div class="preço">
-                                    <div class="vista">de <s>R$&nbsp;780,87</s> por:</div><span class="jss344 jss370">à
+                                    <div class="vista">de <s>R$&nbsp;780,87</s> por:</div><span class="jss344 ">à
                                         vista</span>
-                                    <div class="vista">R$&nbsp;583,40</div><span class="jss346 jss370">no PIX com 15%
+                                    <div class="vista">R$&nbsp;583,40</div><span class="jss346 ">no PIX com 15%
                                         desconto</span>
                                 </div>
                             </div>
@@ -216,9 +263,9 @@
                             <div class="preço">
                                 <div class="preço">
                                     <div class="vista">de <s>R$&nbsp;2.475,87</s> por:</div><span
-                                        class="jss344 jss370">à
+                                        class="jss344 ">à
                                         vista</span>
-                                    <div class="vista">R$&nbsp;1.758,40</div><span class="jss346 jss370">no PIX com 15%
+                                    <div class="vista">R$&nbsp;1.758,40</div><span class="jss346 ">no PIX com 15%
                                         desconto</span>
                                 </div>
                             </div>
@@ -236,9 +283,9 @@
                             <div class="preço">
                                 <div class="preço">
                                     <div class="vista">de <s>R$&nbsp;1.950,47</s> por:</div><span
-                                        class="jss344 jss370">à
+                                        class="jss344 ">à
                                         vista</span>
-                                    <div class="vista">R$&nbsp;1.570,90</div><span class="jss346 jss370">no PIX com 15%
+                                    <div class="vista">R$&nbsp;1.570,90</div><span class="jss346 ">no PIX com 15%
                                         desconto</span>
                                 </div>
                             </div>
@@ -254,9 +301,9 @@
                             <div class="preço">
                                 <div class="preço">
                                     <div class="vista">de <s>R$&nbsp;1.952,47</s> por:</div><span
-                                        class="jss344 jss370">à
+                                        class="jss344 ">à
                                         vista</span>
-                                    <div class="vista">R$&nbsp;1.350,90</div><span class="jss346 jss370">no PIX com 15%
+                                    <div class="vista">R$&nbsp;1.350,90</div><span class="jss346 ">no PIX com 15%
                                         desconto</span>
                                 </div>
                             </div>
@@ -380,5 +427,8 @@
     crossorigin="anonymous"></script>
 <script src="js/config.js"></script>
 <script src="js/TrocarCores.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </html>
