@@ -113,25 +113,19 @@
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-md-6">
-                                <img src="IMG/fone.jpg" class="img-fluid" alt="Imagem do produto">
+                                <img src="" class="img-fluid modal-imagem" alt="Imagem do produto">
                             </div>
                             <div class="col-md-6">
-                                <h5>HEADSET GAMER MANCER QUARTZ, DRIVERS 50MM, PRETO, MCR-QTZ-BL01</h5>
+                                <h5 class="modal-nome"></h5>
                                 <div class="preço">
                                     <div class="preço">
-                                        <span class="jss344 ">à vista</span>
-                                        <div class="vista">R$ 319,90</div>
-                                        <span class="jss346 ">no PIX com 15% de desconto</span>
+                                        <span class="jss344">à vista</span>
+                                        <div class="vista modal-preco"></div>
+                                        <span class="jss346">no PIX com 15% de desconto</span>
                                     </div>
                                 </div>
                                 <br>
-                                <p>Este é um headset gamer de alta qualidade, equipado com drivers de 50mm para
-                                    proporcionar uma experiência de áudio imersiva. Possui design ergonômico para máximo
-                                    conforto durante longas sessões de jogo. O headset é compatível com PC, consoles e
-                                    dispositivos móveis, permitindo que você mergulhe no mundo dos jogos com excelente
-                                    qualidade de som.</p>
-                                <p>Aproveite essa oferta e garanta já o seu headset gamer Mancer Quartz por um preço
-                                    incrível!</p>
+                                <p class="modal-descricao"></p>
                             </div>
                         </div>
                     </div>
@@ -184,8 +178,11 @@
                             <br>
                             <br>
 
-                            <a href="#" class="btn btn-primary" data-toggle="modal"
-                                data-target="#modalProduto">Comprar</a>
+                            <button class="btn btn-primary btn-comprar" data-toggle="modal" data-target="#modalProduto"
+    data-nome="HEADSET GAMER MANCER QUARTZ, DRIVERS 50MM, PRETO, MCR-QTZ-BL01"
+    data-preco="R$ 319,90"
+    data-imagem="IMG/fone.jpg">Comprar</button>
+
 
                         </div>
                     </div>
@@ -199,8 +196,7 @@
                                     HDMI/DP, LS24BG300ELMZD</strong></span>
                             <div class="preço">
                                 <div class="preço">
-                                    <div class="vista">de <s>R$&nbsp;2.000,47</s> por:</div><span
-                                        class="jss344 ">à
+                                    <div class="vista">de <s>R$&nbsp;2.000,47</s> por:</div><span class="jss344 ">à
                                         vista</span>
                                     <div class="vista">R$&nbsp;1.470,90</div><span class="jss346 ">no PIX com 15%
                                         desconto</span>
@@ -262,8 +258,7 @@
                                     MCR-RTX2060SUPER-HMDLLSS</strong></span>
                             <div class="preço">
                                 <div class="preço">
-                                    <div class="vista">de <s>R$&nbsp;2.475,87</s> por:</div><span
-                                        class="jss344 ">à
+                                    <div class="vista">de <s>R$&nbsp;2.475,87</s> por:</div><span class="jss344 ">à
                                         vista</span>
                                     <div class="vista">R$&nbsp;1.758,40</div><span class="jss346 ">no PIX com 15%
                                         desconto</span>
@@ -282,8 +277,7 @@
                                     CACHE 18MB, LGA1700, BX8071512400</strong></span>
                             <div class="preço">
                                 <div class="preço">
-                                    <div class="vista">de <s>R$&nbsp;1.950,47</s> por:</div><span
-                                        class="jss344 ">à
+                                    <div class="vista">de <s>R$&nbsp;1.950,47</s> por:</div><span class="jss344 ">à
                                         vista</span>
                                     <div class="vista">R$&nbsp;1.570,90</div><span class="jss346 ">no PIX com 15%
                                         desconto</span>
@@ -300,8 +294,7 @@
                                     CACHE 20MB, AM4, 100-100000263BOX</strong></span>
                             <div class="preço">
                                 <div class="preço">
-                                    <div class="vista">de <s>R$&nbsp;1.952,47</s> por:</div><span
-                                        class="jss344 ">à
+                                    <div class="vista">de <s>R$&nbsp;1.952,47</s> por:</div><span class="jss344 ">à
                                         vista</span>
                                     <div class="vista">R$&nbsp;1.350,90</div><span class="jss346 ">no PIX com 15%
                                         desconto</span>
@@ -427,6 +420,7 @@
     crossorigin="anonymous"></script>
 <script src="js/config.js"></script>
 <script src="js/TrocarCores.js"></script>
+<script src="js/modal.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
