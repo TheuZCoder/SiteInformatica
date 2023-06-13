@@ -27,3 +27,17 @@ height: 500px;
     background-color: #fff;
     color: #222;
   }
+
+  #dadosSalvos {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f5f5f5;
+  }
+
+  /* Estilo para os botões de editar e excluir */
+  .editar,
+  .excluir {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
