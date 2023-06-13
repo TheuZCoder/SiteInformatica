@@ -21,7 +21,7 @@ function isRestrictedPage() {
 function showPopup() {
   // Exibir o pop-up aqui, por exemplo, alterando a visibilidade de um elemento HTML ou utilizando uma biblioteca/modal personalizado
   alert("Você precisa fazer login para acessar esta página.");
-  window.location.href = "index.html"; // Redirecionar para a página de login
+  window.location.href = "computador.html"; // Redirecionar para a página de login
 }
 
 document.getElementById("loginBtn").addEventListener("click", function () {
