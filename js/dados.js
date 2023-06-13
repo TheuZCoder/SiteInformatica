@@ -4,6 +4,19 @@ $(function () {
       minDate: 0,
     });
   });
+  
+  const emailInput = document.getElementById('email');
+
+  emailInput.addEventListener('blur', function (event) {
+    const input = event.target;
+    const emailValue = input.value.trim();
+  
+    if (emailValue !== '' && !emailValue.includes('@')) {
+      input.setCustomValidity('O e-mail deve conter o símbolo "@" entre duas palavras.');
+    } else {
+      input.setCustomValidity('');
+    }
+  });
 
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('.needs-validation');
