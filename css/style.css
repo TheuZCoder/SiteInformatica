@@ -7,15 +7,23 @@
 .carousel-inner img {
 height: 500px;
 }
-
+.card {
+  cursor:pointer;
+}
 .card-body .a {
     display: flex;
     justify-content: flex-end;
 }
 .card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.2);
 }
-
+.dark span{
+  background-color: white;
+}
+.dark li {
+  color: white;
+  background-color: white;
+}
 .dark {
     background-color: #222;
     color: #fff;
